@@ -4,19 +4,33 @@
 MIST4610 9:35-10:50 Group 9
 
 # Team Members
-1. Jack Mathison |
-2. Justin Suilivan |
-3. Hayes Herzog |
-4. Carson Whitt |
-5. John Hulsey |
+1. John Hulsey | @J-Hulsey
+   
+   REPO: https://github.com/purwplhaze/mist4610_project1
+   
+3. Jack Mathison | @JackMathison
+   
+   REPO: https://github.com/JackMathison/tissue
+   
+5. Carson Whitt | @whittcarson
+
+   REPO: https://github.com/whittcarson/MIST4610GroupProject1
+   
+7. Justin Sullivan | @Justin7ime
+   
+   REPO: https://github.com/Justn7ime/effective-parakeet
+   
+9. Hayes Herzog | @purpwlhaze
+    
+   REPO: https://github.com/purwplhaze/mist4610_project1
 
 # Problem Description
-The task at hand is to model and build a relational database for the general workings of a football team. The central entity in the model is the 'team' entity. The team operates in conjunction with players, staff, coaches in order to track equipment, injuries, events, donations, and rental of facilities. We are interested in modeling these relationships and populating the entities and their attributes with sample data. We are also interested in performing functioning queries on the data so that we can generate reports and build insight about operations within the footaball team.
+The task at hand is to model and build a relational database for the general workings of a football team. The central entity in the model is the 'team' entity. The team operates in conjunction with players, staff, and coaches in order to track equipment, injuries, events, donations, and rental of facilities. We are interested in modeling these relationships and populating the entities and their attributes with sample data. We are also interested in performing functioning queries on the data so that we can generate reports and build insight into operations within the football team.
 
 # Data Model
 In this football team database, the entities represent the various aspects and participants involved in managing a football organization. Each entity is equipped with attributes that provide details essential to the organization's operation, such as personal information, roles, and activities within the team structure.
 
-The team entity holds central information about each football team, including its unique identifier, name, average age of players, mascot, and the captain's name. It is directly related to several other entities that provide a comprehensive view of the team's functioning. For instance, each team is associated with multiple staff members; this one-to-many relationship indicates that a team has various staff members fulfilling different roles, identified by their names, contact information, and specific position within the team.
+The team entity holds central information about each football team, including its unique identifier, name, average age of players, mascot, and the captain's name. It is directly related to several other entities that provide a comprehensive view of the team's functioning. For instance, each team is associated with multiple staff members; this one-to-many relationship indicates that a team has various staff members fulfilling different roles, identified by their names, contact information, and specific positions within the team.
 
 Coaches are crucial to a team's performance and are tracked in the database by their full name, experience, specialty, and contact info. Each coach is linked to one football team, following the one-to-many relationship paradigm, suggesting that while a coach is dedicated to a single team, the team could have multiple coaches, one or many for different aspects of the game such as offense, defense, and special teams.
 
@@ -74,7 +88,7 @@ Query 1 lists the team name and ID for any team having players out from injuries
 <img width="702" alt="A1" src="https://github.com/whittcarson/MIST4610GroupProject1/assets/131502055/233cdba3-0bdf-4b17-bc1f-99ae4ea929b4">
 
 
-This query allows managers to quickly determine how what teams have players benched due to entended injury. During the season, it is crucial to know what key players you might be lacking on your team, and also what other teams are suffering the loss of players. Then coaches can make strategic changes to a game plan. Grouping by teams who have at least 2 players out for an extended time also shows what teams may be more vulnerable with more players injured.
+This query allows managers to quickly determine what teams have players benched due to an extended injury. During the season, it is crucial to know what key players you might be lacking on your team, and also what other teams are suffering the loss of players. Then coaches can make strategic changes to a game plan. Grouping by teams who have at least 2 players out for an extended time also shows which teams may be more vulnerable with more players injured.
 
 RESULTS
 
@@ -95,7 +109,7 @@ RESULTS
 
 **QUERY 3**
 
-Query 3 retrieves information about about what players have checked out certain equipment items and have since returned the item.
+Query 3 retrieves information about what players have checked out certain equipment items and have since returned the item.
 
 <img width="631" alt="A3" src="https://github.com/whittcarson/MIST4610GroupProject1/assets/131502055/8b8feb81-769e-41b8-88a3-118b96adc47a">
 
@@ -189,7 +203,7 @@ RESULTS
 
 **QUERY 10**
 
-The query retrieves details of players who have borrowed helmets from their football team and have not returned them. It connects player and equipment records, focusing on unreturned helmets by checking for a null return date and lists them along with player and team details, sorting by the date the helmets were borrowed.
+The query retrieves details of players who have borrowed helmets from their football team and have not returned them. It connects player and equipment records, focusing on unreturned helmets by checking for a null return date and listing them along with player and team details, sorting by the date the helmets were borrowed.
 
 <img width="930" alt="A10" src="https://github.com/whittcarson/MIST4610GroupProject1/assets/131502055/d3ca6649-f413-4874-8abb-8eca499fd43b">
 
